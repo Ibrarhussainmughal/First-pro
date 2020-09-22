@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 12
       - name: Install surge
-        run: npn install -g surge
+        run: npm install -g surge
       - name: Run surge
         run: surge ./ first-project2020.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
